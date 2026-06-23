@@ -26,3 +26,44 @@ do {
     console.log("Apna college");
     j++;
 } while ( j <= 10);
+
+
+// this loop is done for counting string items
+let str = "javascript"
+let size = 0;
+
+for (let i of str) {
+    console.log("i=", i);
+    size++;
+}
+
+console.log("size:", size)
+
+// for in loop, this loop should be used when we are looping in objects
+let student = {
+    name: "vijay kumar",
+    age: 28,
+    cgpa: 8.01
+}
+
+for (let key in student) {
+    console.log("key=", key, "value=", student[key]);
+}
+
+
+//print all the even numbers from 0 to 100
+for (let i=0; i <= 100; i++) {
+    if (i%2 !== 0){
+        console.log( "odd numbers:", i);
+    }
+}
+
+let GameNum=24;
+
+let UserNum = prompt("ENter a number 0-100");
+
+while (GameNum != UserNum) {
+    UserNum = prompt("ENter a number 0-100, thats wrong");
+}
+
+console.log("congrats, number is correct");
